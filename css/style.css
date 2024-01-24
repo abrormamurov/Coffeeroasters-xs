@@ -1,0 +1,237 @@
+/* fraunces-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/fraunces-v31-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/barlow-v12-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* barlow-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/barlow-v12-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+  --heading-font-family: "Fraunces", serif;
+  --main-font-family: "Barlow", sans-serif;
+  --dark-cyan: #0e8784;
+  --dark-grey-blue: #333d4b;
+  --pale-orange: #fdd6ba;
+  --light-cream: #fefcf7;
+  --grey: #83888f;
+
+  --button-hover: #66d2cf;
+}
+
+*,
+*::after *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+html {
+  height: 100%;
+}
+
+img {
+  object-fit: cover;
+  display: flex;
+}
+
+main {
+  flex-shrink: 1;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--main-font-family);
+  font-weight: 400;
+  line-height: 26px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--heading-font-family);
+}
+
+h1 {
+  font-size: 72px;
+  line-height: 72px;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 48px;
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 36px;
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1380px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.header__list-1 {
+  color: #83888f;
+  font-family: Barlow;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 15px; /* 125% */
+  letter-spacing: 0.923px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 33px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  width: 1280px;
+  height: 120px;
+  flex-shrink: 0;
+  background: #2c343e;
+  padding-top: 67px;
+}
+
+.footer__object {
+  display: flex;
+}
+.footer__img {
+}
+.footer__list {
+}
+.footer__list-1 {
+  color: #83888f;
+  font-family: Barlow;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 15px; /* 125% */
+  letter-spacing: 0.923px;
+  text-transform: uppercase;
+  display: flex;
+  padding-left: 100px;
+  padding-right: 1px;
+  justify-content: center;
+  align-items: center;
+  gap: 33px;
+  flex-shrink: 0;
+}
+.footer__link {
+  background: #2c343e;
+  width: 120px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.hero {
+  margin-bottom: 100px;
+}
+.hero__img {
+  background-image: url(../images/home/desktop/image-hero-coffeepress.jpg);
+  background-repeat: no-repeat;
+  width: 1280px;
+  height: 600px;
+  margin-top: 113px;
+  border-radius: 8px;
+  margin-left: 40px;
+  padding-top: 80px;
+}
+.hero__object {
+  display: flex;
+  width: 493px;
+  height: 255px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-shrink: 0;
+  margin-left: 86px;
+}
+.hero__object-title {
+  color: var(--light-cream);
+  font-family: var(--heading-font-family);
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 72px; /* 100% */
+}
+.hero__object-text {
+  color: var(--light-cream);
+  font-family: var(--main-font-family);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  width: 445px;
+  opacity: 0.8;
+}
+.hero__link {
+  width: 217px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  background: var(--dark-cyan);
+  margin-left: 86px;
+  margin-top: 80px;
+}
+
+.hero__link-t {
+  color: var(--light-cream);
+  text-align: center;
+  font-family: var(--heading-font-family);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 25px; /* 138.889% */
+}
