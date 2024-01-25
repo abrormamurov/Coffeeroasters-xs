@@ -132,6 +132,7 @@ h4 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 50px;
 }
 
 .footer {
@@ -234,4 +235,7 @@ h4 {
   font-style: normal;
   font-weight: 900;
   line-height: 25px; /* 138.889% */
+}
+
+button {
 }

@@ -134,10 +134,12 @@ main {
   font-style: normal;
   font-weight: 900;
   line-height: 32px; /* 133.333% */
+  margin-bottom: 72px;
 }
 .main-end__img {
   display: flex;
   gap: 500px;
+  margin-bottom: 50px;
 }
 .main-end__list-1 {
   display: flex;
@@ -153,6 +155,7 @@ main {
   font-style: normal;
   font-weight: 900;
   line-height: 36px; /* 112.5% */
+  margin-bottom: 20px;
 }
 .main-list-text-2 {
   color: var(--dark-grey-blue);
